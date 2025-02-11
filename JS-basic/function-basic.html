@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add7(num){
+            return num + 7;
+        }
+
+        function multiply(num1, num2){
+            return num1*num2;
+        }
+
+        function capitalize(word){
+            anyWord = word.toLowerCase();
+            anyWord = anyWord.at(0).toUpperCase().concat(anyWord.slice(1));
+            return anyWord;
+        }
+
+        function lastLetter(string){
+            letter = string.at(-1);
+            return letter;
+        }
+
+        let number = 2;
+        console.log("Add7 function: " + add7(number));
+
+        let number1 = 3;
+        let number2 = 5;
+        console.log("Multiply function: " + multiply(number1, number2));
+
+        let word1 = "heWwo";
+        console.log("Capitalize function: " + capitalize(word1));
+
+        let string1 = "abcdef";
+        console.log("lastLetter function: " + lastLetter(string1));
+    </script>
+</body>
+</html>
